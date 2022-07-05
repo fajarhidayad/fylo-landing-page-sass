@@ -1,0 +1,42 @@
+// COLORS
+$color-primary: hsl(243, 87%, 12%);
+$color-secondary: hsl(238, 22%, 44%);
+
+$color-accent-1: hsl(224, 93%, 58%);
+$color-accent-2: hsl(170, 45%, 43%);
+
+$color-gray-1: hsl(240, 75%, 98%);
+$color-gray-2: hsl(0, 0%, 75%);
+
+// FONTS
+$font-primary: "Raleway", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+// Breakpoints
+$bp-mobile: 37.5em; // 500px / 16px
+$bp-medium: 50em; // 800px / 16px
+$bp-desktop: 90em; // 1440px / 16px
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem;
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 2.5rem;
+  }
+}

@@ -1,0 +1,54 @@
+.access {
+  background-color: $color-secondary;
+  padding: 7rem 0;
+  font-family: $font-secondary;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-side {
+    color: $color-gray-1;
+    width: 40%;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    color: $color-gray-1;
+    line-height: 1.7;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form-side {
+    width: 35%;
+
+    @media screen and (max-width: $bp-mobile) {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &--input {
+      border: none;
+      border-radius: 3px;
+      display: block;
+      padding: 1.5rem 2rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

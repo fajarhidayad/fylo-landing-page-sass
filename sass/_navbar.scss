@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-family: $font-primary;
+
+  &__logo {
+    max-width: 13rem;
+
+    @media screen and (max-width: $bp-mobile) {
+      max-width: 8rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    li:not(:last-child) {
+      margin-right: 5rem;
+
+      @media screen and (max-width: $bp-mobile) {
+        margin-right: 2.4rem;
+      }
+    }
+
+    &-item {
+      font-size: 1.6rem;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

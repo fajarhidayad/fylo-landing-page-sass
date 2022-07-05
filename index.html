@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#"><img src="images/logo.svg" alt="Logo" class="navbar__logo"></a>
+      <ul class="navbar__list">
+        <li><a href="#" class="navbar__list-item">Features</a></li>
+        <li><a href="#" class="navbar__list-item">Team</a></li>
+        <li><a href="#" class="navbar__list-item">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__text-side">
+          <h2 class="heading-1">All your files in one secure location, accessible anywhere.</h2>
+          <p class="paragraph">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="hero__input">
+            <button class="btn" type="submit">Get Started</button>
+          </form>
+        </div>
+        <img src="images/illustration-1.svg" alt="illustration-1" class="hero__img">
+      </div>
+    </section>
+
+    <section class="productive">
+      <div class="container">
+        <div class="productive__text-side">
+          <h1 class="heading-2">Stay productive, wherever you are</h1>
+          <p class="paragraph">
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
+          <p class="paragraph">
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
+          <button class="btn-link">See how Fylo works <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <circle id="b" cx="6" cy="6" r="6" />
+                <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                  <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                  <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                    in="shadowBlurOuter1" />
+                </filter>
+              </defs>
+              <g fill-rule="evenodd">
+                <g transform="translate(2 2)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                  <use xlink:href="#b" />
+                </g>
+                <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF" />
+              </g>
+            </svg></button>
+
+          <div class="productive__card">
+
+            <p class="productive__card-text">
+              Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="productive__card-name">
+              <img src="images/avatar-testimonial.jpg" alt="avatar" class="productive__card-name--img">
+              <div>
+                <h4 class="productive__card-name--heading">Kyle Burton</h4>
+                <p>Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="images/illustration-2.svg" alt="illustration-2" class="productive__img">
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="container">
+        <div class="access__text-side">
+          <h2 class="heading-3 text-light">Get early access today</h2>
+          <p class="access__paragraph">
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <div class="access__form-side">
+          <input class="access__form-side--input" type="text" placeholder="email@example.com">
+          <button class="btn btn-fill">Get Started For Free</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <img src="images/logo-white.svg" alt="Logo white" class="footer__logo">
+
+      <div class="footer__info">
+        <ul class="footer__info-list">
+          <li>
+            <img src="images/icon-phone.svg" alt="logo-phone">
+            <p>Phone: +1-543-123-4567</p>
+          </li>
+          <li><img src="images/icon-email.svg" alt="logo-email">
+            <p> example@fylo.com</p>
+          </li>
+        </ul>
+        <ul class="footer__info-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="footer__info-list">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <ul class="footer__info-socmed">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

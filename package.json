@@ -1,0 +1,14 @@
+{
+  "name": "fylo-landing-page",
+  "version": "1.0.0",
+  "description": "Mastering SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Fajar Hidayad",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}

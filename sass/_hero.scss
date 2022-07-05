@@ -1,0 +1,55 @@
+.hero {
+  margin-bottom: 10rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text-side {
+    width: 50%;
+    color: $color-primary;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      text-align: center;
+
+      & > form {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__input {
+    font-family: $font-primary;
+    padding: 1.5rem;
+    border: 1px solid $color-primary;
+    border-radius: 3px;
+    margin-right: 1.5rem;
+    width: 45%;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &::placeholder {
+      color: rgba(#111, 0.4);
+    }
+  }
+}
